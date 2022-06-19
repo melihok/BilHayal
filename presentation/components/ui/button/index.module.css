@@ -1,0 +1,31 @@
+.base {
+  @apply bg-pink-500
+  text-white
+  text-base font-semibold
+  p-3  
+  rounded-xl
+  transition
+  w-full
+  hover:bg-pink-600
+  disabled:opacity-50;
+}
+
+.default {
+  @apply bg-pink-500
+  text-white
+  text-base font-semibold
+  p-3
+  rounded-3xl  
+  transition
+  w-full
+  hover:bg-pink-600
+  disabled:opacity-50;
+}
+
+.link {
+  @apply bg-transparent
+  text-blue-600
+  p-0
+  hover:bg-transparent
+  hover:text-blue-800;
+}

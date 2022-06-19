@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+ 
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222;
+}
+
+.slick-slide div { height: 630px !important; }
+ 
+
+@layer components {
+  html {
+    @apply bg-white text-gray-500 antialiased;
+  }
+  .c-small {
+    @apply max-w-screen-sm mx-auto px-4;
+  }
+  .c-large {
+    @apply max-w-screen-xl mx-auto px-4;
+  }
+  .text-highlight {
+    @apply text-gray-900;
+  }
+}
